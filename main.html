@@ -6,19 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./styles/index.css">
+  <script src="index.js" type="module" defer></script>
 </head>
 <body>
   <section>
     <div id="timer">
-      <div>00</div>
-      <div>:</div>
-      <div>00</div>
+      <div id="HH">00</div>
+      <div id=":">:</div>
+      <div id="mm">00</div>
     </div>
     <div id="buttons">
-      <button>Start</button>
-      <button>Pause</button>
-      <button>Continue</button>
-      <button>End</button>
+      <button class="btn" id="start-btn">Start</button>
+      <button class="btn">Pause</button>
+      <button class="btn">Continue</button>
+      <button class="btn">Restart</button>
     </div>
   </section>
 </body>
