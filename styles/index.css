@@ -4,25 +4,8 @@
   padding: 0;
 }
 
-nav {
-  width: 100%;
-  background-color: #262626;
-  color: #fafafa;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 4px 4px 0px 4px;
-  display: none;
-}
-nav img {
-  color: #fafafa;
-}
-
 section {
-  height: 100vh;
+  height: 95vh;
   width: 100%;
   background-color: #262626;
   color: #fafafa;
@@ -48,8 +31,8 @@ section #buttons {
   gap: 24px;
 }
 section #buttons .btn {
-  width: 80px;
-  height: 32px;
+  width: 88px;
+  height: 40px;
   border: none;
   border-radius: 16px;
   background-color: #389165;
@@ -72,6 +55,7 @@ section #buttons .btn:disabled {
 }
 
 footer {
+  height: 4vh;
   background-color: #262626;
   font-family: "Inter", sans-serif;
   color: #fafafa;

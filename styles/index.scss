@@ -16,27 +16,8 @@ $colorBtnDisabled: #1f5d41;
   padding: 0;
 }
 
-nav{
-  width: 100%;
-  background-color: $darkTheme-background;
-  color: $darkTheme-color;
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 4px 4px 0px 4px;
-  img{
-    color: $darkTheme-color;
-  }
-  display: none;
-}
-
 section{
-  height: 100vh;
+  height: 95vh;
   width: 100%;
   background-color: $darkTheme-background;
   color: $darkTheme-color;
@@ -64,8 +45,8 @@ section{
     gap: 24px;
 
     .btn{
-      width: 80px;
-      height: 32px;
+      width: 88px;
+      height: 40px;
       border: none;
       border-radius: 16px;
       background-color: $backgroundBtn;
@@ -92,6 +73,7 @@ section{
 }
 
 footer{
+  height: 4vh;
   background-color: $darkTheme-background;
   font-family: 'Inter', sans-serif;
   color: $darkTheme-color;
