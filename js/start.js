@@ -1,4 +1,4 @@
-export {start} 
+export {start, HH, mm, s} 
 
 let HH = document.getElementById('HH')
 let mm = document.getElementById('mm')
