@@ -10,6 +10,13 @@ $darkTheme-color: #fafafa;
   padding: 0;
 }
 
+nav{
+  background-color: $darkTheme-background;
+  color: $darkTheme-color;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
 section{
   height: 100vh;
   background-color: $darkTheme-background;
