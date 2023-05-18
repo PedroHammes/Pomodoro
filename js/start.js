@@ -1,16 +1,19 @@
-export {start, HH, mm, s} 
+export {start, HH, mm, s, timer} 
 
 let HH = document.getElementById('HH')
 let mm = document.getElementById('mm')
 let s = document.getElementById('s')
+let timer
 
 function start (){  
  countSec()
+
 }
 
 function countSec(){
   let sec = Number(s.innerText)+1
-  if(sec == 15){
+  
+  if(sec == 60){
     s.innerText = `00`
     countMin()
   }else if(sec < 10){
@@ -18,11 +21,12 @@ function countSec(){
   }else{
     s.innerText = `${sec}`
   }
+  timer = setTimeout(countSec, 1000)
 }
 
 function countMin(){
   let min = Number(mm.innerText)+1
-  if(min == 15){
+  if(min == 60){
     mm.innerText = `00`
     countHour()
   }else if(min < 10){
@@ -34,7 +38,7 @@ function countMin(){
 
 function countHour(){
   let hour = Number(HH.innerText)+1
-  if(hour == 15){
+  if(hour == 24){
     HH.innerText = `00`
   }else if(hour < 10){
     HH.innerHTML = `0${hour}`
