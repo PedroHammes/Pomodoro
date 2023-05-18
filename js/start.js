@@ -1,9 +1,44 @@
-export { start }
+export {start} 
 
-function start(){
-  let minute = Number(document.getElementById('mm').innerText)
-  minute++
-  document.getElementById('mm').innerText = minute < 10 ? `0${minute}` : minute 
+let HH = document.getElementById('HH')
+let mm = document.getElementById('mm')
+let s = document.getElementById('s')
 
-  console.log(minute)
+function start (){  
+ countSec()
+}
+
+function countSec(){
+  let sec = Number(s.innerText)+1
+  if(sec == 15){
+    s.innerText = `00`
+    countMin()
+  }else if(sec < 10){
+    s.innerText = `0${sec}`
+  }else{
+    s.innerText = `${sec}`
+  }
+}
+
+function countMin(){
+  let min = Number(mm.innerText)+1
+  if(min == 15){
+    mm.innerText = `00`
+    countHour()
+  }else if(min < 10){
+    mm.innerHTML = `0${min}`
+  }else{
+    mm.innerText = `${min}`
+  }
+}
+
+function countHour(){
+  let hour = Number(HH.innerText)+1
+  if(hour == 15){
+    HH.innerText = `00`
+  }else if(hour < 10){
+    HH.innerHTML = `0${hour}`
+  }else{
+    HH.innerText = `${hour}`
+  }
 }
