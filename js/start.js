@@ -7,7 +7,6 @@ let timer
 
 function start (){  
  countSec()
-
 }
 
 function countSec(){
