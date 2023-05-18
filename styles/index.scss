@@ -86,15 +86,15 @@ section{
         background-color: $backgroundBtnDisabled;
         color: $colorBtnDisabled;
         cursor: not-allowed;
-        transform: scale(1);
       }
     }
   }
 }
 
-@media screen and (max-width: 800px){
-  #buttons{
-    display: flex;
-    flex-direction: row;
+@media screen and (min-width: 800px){
+  section{
+    #buttons{
+      flex-direction: row;
+    }
   }
 }

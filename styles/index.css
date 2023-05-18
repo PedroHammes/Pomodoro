@@ -69,12 +69,10 @@ section #buttons .btn:disabled {
   background-color: #b9e1c8;
   color: #1f5d41;
   cursor: not-allowed;
-  transform: scale(1);
 }
 
-@media screen and (max-width: 800px) {
-  #buttons {
-    display: flex;
+@media screen and (min-width: 800px) {
+  section #buttons {
     flex-direction: row;
   }
 }
