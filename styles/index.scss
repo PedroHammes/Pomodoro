@@ -1,0 +1,29 @@
+//colors
+$darkTheme-background: #262626;
+$darkTheme-color: #fafafa;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+section{
+  height: 100vh;
+  background-color: $darkTheme-background;
+  color: $darkTheme-color;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+
+  #timer{
+    display: flex;
+    gap: 8px;
+  }
+  #buttons{
+    display: flex;
+    gap: 8px;
+  }
+}
