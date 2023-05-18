@@ -72,8 +72,15 @@ section #buttons .btn:disabled {
 }
 
 @media screen and (min-width: 800px) {
+  section #timer {
+    font-size: 64px;
+  }
   section #buttons {
     flex-direction: row;
+  }
+  section #buttons .btn {
+    width: 104px;
+    height: 40px;
   }
 }
 

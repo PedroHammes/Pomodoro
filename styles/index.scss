@@ -93,8 +93,15 @@ section{
 
 @media screen and (min-width: 800px){
   section{
+    #timer{
+      font-size: 64px;
+    }
     #buttons{
       flex-direction: row;
+      .btn{
+        width: 104px;
+        height: 40px;
+      }
     }
   }
 }
