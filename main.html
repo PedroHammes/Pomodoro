@@ -11,20 +11,21 @@
 <body>
   <nav id="navigation-bar">
     <p id="local-hour"></p>
+    <img src="./styles/Icons/toggle_on_FILL0_wght400_GRAD0_opsz48.svg" alt="">
   </nav>
   <section>
     <div id="timer">
       <div id="HH">00</div>
-      <div id=":">:</div>
+      <div class="space">:</div>
       <div id="mm">00</div>
-      <div id=":">:</div>
+      <div class="space">:</div>
       <div id="s">00</div>
     </div>
     <div id="buttons">
       <button class="btn" id="start-btn">Start</button>
-      <button class="btn" id="pause-btn">Pause</button>
-      <button class="btn" id="continue-btn">Continue</button>
-      <button class="btn" id="restart-btn">Restart</button>
+      <button class="btn" id="pause-btn" disabled="true">Pause</button>
+      <button class="btn" id="continue-btn" disabled="true">Continue</button>
+      <button class="btn" id="restart-btn" disabled="true">Restart</button>
     </div>
   </section>
 </body>

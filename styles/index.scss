@@ -1,6 +1,12 @@
 //colors
 $darkTheme-background: #262626;
 $darkTheme-color: #fafafa;
+$backgroundBtn: #389165;
+$backgroundBtnHover: #27744f;
+$backgroundBtnActive: #1f5d41;
+$backgroundBtnDisabled: #b9e1c8;
+$colorBtnDisabled: #1f5d41;
+
 
 //fonts
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');//font-family: 'Inter', sans-serif;
@@ -11,17 +17,31 @@ $darkTheme-color: #fafafa;
 }
 
 nav{
+  width: 100%;
   background-color: $darkTheme-background;
   color: $darkTheme-color;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 4px 4px 0px 4px;
+  img{
+    color: $darkTheme-color;
+  }
+  display: none;
 }
 
 section{
   height: 100vh;
+  width: 100%;
   background-color: $darkTheme-background;
   color: $darkTheme-color;
 
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,21 +53,48 @@ section{
     gap: 8px;
 
     font-family: 'Inter', sans-serif;
-    font-size: 64px;
+    font-size: 48px;
+    .space{
+      color: $backgroundBtn;
+    }
   }
   #buttons{
     display: flex;
-    gap: 16px;
+    flex-direction: column;
+    gap: 24px;
 
     .btn{
       width: 80px;
       height: 32px;
+      border: none;
       border-radius: 16px;
+      background-color: $backgroundBtn;
+      color: $darkTheme-color;
 
       font-family: 'Inter', sans-serif;
-      font-weight: bold;
+      font-weight: 500;
 
       cursor: pointer;
+      transition: 0.4s;
+      &:hover{
+        background-color: $backgroundBtnHover;
+      }
+      &:active{
+        background-color: $backgroundBtnActive;
+      }
+      &:disabled{
+        background-color: $backgroundBtnDisabled;
+        color: $colorBtnDisabled;
+        cursor: not-allowed;
+        transform: scale(1);
+      }
     }
+  }
+}
+
+@media screen and (max-width: 800px){
+  #buttons{
+    display: flex;
+    flex-direction: row;
   }
 }

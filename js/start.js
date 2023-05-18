@@ -1,4 +1,5 @@
 export {start, HH, mm, s, timer, countSec} 
+import { startBtn, pauseBtn, continueBtn, restartBtn } from "../index.js"
 
 let HH = document.getElementById('HH')
 let mm = document.getElementById('mm')
@@ -7,6 +8,9 @@ let timer
 
 function start (){  
  countSec()
+ startBtn.disabled = 'true'
+ pauseBtn.disabled = ''
+ restartBtn.disabled = ''
 }
 
 function countSec(){

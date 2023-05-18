@@ -5,16 +5,28 @@
 }
 
 nav {
+  width: 100%;
   background-color: #262626;
   color: #fafafa;
   font-family: "Inter", sans-serif;
   font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 4px 0px 4px;
+  display: none;
+}
+nav img {
+  color: #fafafa;
 }
 
 section {
   height: 100vh;
+  width: 100%;
   background-color: #262626;
   color: #fafafa;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,19 +37,46 @@ section #timer {
   display: flex;
   gap: 8px;
   font-family: "Inter", sans-serif;
-  font-size: 64px;
+  font-size: 48px;
+}
+section #timer .space {
+  color: #389165;
 }
 section #buttons {
   display: flex;
-  gap: 16px;
+  flex-direction: column;
+  gap: 24px;
 }
 section #buttons .btn {
   width: 80px;
   height: 32px;
+  border: none;
   border-radius: 16px;
+  background-color: #389165;
+  color: #fafafa;
   font-family: "Inter", sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   cursor: pointer;
+  transition: 0.4s;
+}
+section #buttons .btn:hover {
+  background-color: #27744f;
+}
+section #buttons .btn:active {
+  background-color: #1f5d41;
+}
+section #buttons .btn:disabled {
+  background-color: #b9e1c8;
+  color: #1f5d41;
+  cursor: not-allowed;
+  transform: scale(1);
+}
+
+@media screen and (max-width: 800px) {
+  #buttons {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
