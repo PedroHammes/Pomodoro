@@ -1,4 +1,4 @@
-export {start, HH, mm, s, timer} 
+export {start, HH, mm, s, timer, countSec} 
 
 let HH = document.getElementById('HH')
 let mm = document.getElementById('mm')
