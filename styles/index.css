@@ -71,6 +71,18 @@ section #buttons .btn:disabled {
   cursor: not-allowed;
 }
 
+footer {
+  background-color: #262626;
+  font-family: "Inter", sans-serif;
+  color: #fafafa;
+  text-align: center;
+  padding-bottom: 16px;
+}
+footer a {
+  color: #389165;
+  text-decoration: none;
+}
+
 @media screen and (min-width: 800px) {
   section #timer {
     font-size: 64px;

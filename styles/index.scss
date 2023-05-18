@@ -91,6 +91,18 @@ section{
   }
 }
 
+footer{
+  background-color: $darkTheme-background;
+  font-family: 'Inter', sans-serif;
+  color: $darkTheme-color;
+  text-align: center;
+  padding-bottom: 16px;
+  a{
+    color: $backgroundBtn;
+    text-decoration: none;
+  }
+}
+
 @media screen and (min-width: 800px){
   section{
     #timer{
