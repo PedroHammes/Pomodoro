@@ -5,7 +5,7 @@
 }
 
 section {
-  height: 95vh;
+  height: 90vh;
   width: 100%;
   background-color: #262626;
   color: #fafafa;
@@ -55,7 +55,7 @@ section #buttons .btn:disabled {
 }
 
 footer {
-  height: 4vh;
+  height: 9vh;
   background-color: #262626;
   font-family: "Inter", sans-serif;
   color: #fafafa;
